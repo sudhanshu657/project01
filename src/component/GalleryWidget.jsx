@@ -34,16 +34,16 @@ export default function GalleryWidget() {
   };
 
   return (
-    <div className="bg-[#363C43] rounded-[18px] shadow-[5px_5px_10px_rgba(0,0,0,0.5),-5px_-5px_10px_rgba(96,96,96,0.1)] p-6 relative">
+    <div className="bg-[#363C43] rounded-[18px] shadow-[5px_5px_10px_rgba(0,0,0,0.5),-5px_-5px_10px_rgba(96,96,96,0.1)] p-4 md:p-6 relative w-full">
       {/* Header */}
-      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
-        <div className="flex items-center gap-3">
-          <button className="w-6 h-6 rounded-full bg-[#171717] flex items-center justify-center text-gray-400 hover:text-gray-300 transition-colors shadow-inner">
-            <HelpCircle size={16} />
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 md:gap-4 mb-4 md:mb-6">
+        <div className="flex items-center gap-2 md:gap-3">
+          <button className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-[#171717] flex items-center justify-center text-gray-400 hover:text-gray-300 transition-colors shadow-inner">
+            <HelpCircle size={14} className="md:w-4 md:h-4" />
           </button>
           
-          <div className="bg-[#171717] px-6 py-2 rounded-[20px] shadow-inner">
-            <h2 className="text-lg font-semibold text-white">Gallery</h2>
+          <div className="bg-[#171717] px-4 md:px-6 py-1.5 md:py-2 rounded-[20px] shadow-inner">
+            <h2 className="text-base md:text-lg font-semibold text-white">Gallery</h2>
           </div>
         </div>
         
